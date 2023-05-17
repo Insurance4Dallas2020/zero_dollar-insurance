@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <title>Subsidy Eligibility Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Zero Dollar Health Insurance</h1>
+    <div class="input-section">
+      <label for="household-size">Household Size:</label>
+      <input type="number" id="household-size" min="1" max="6" required>
+    </div>
+    <div class="input-section">
+      <label for="income-type">Income Type:</label>
+      <div class="radio-container">
+        <input type="radio" id="annual" name="income-type" value="annual" checked>
+        <label for="annual">Annual</label>
+        <input type="radio" id="hourly" name="income-type" value="hourly">
+        <label for="hourly">Hourly</label>
+      </div>
+    </div>
+    <div class="input-section">
+      <label for="income">Income:</label>
+      <input type="number" id="income" step="0.01" required>
+    </div>
+    <button id="calculate-btn">Calculate</button>
+    <div id="result" class="result-section"></div>
+    <div class="link-button">
+      <a href="https://www.healthsherpa.com/?_agent_id=john-thornton" target="_blank">Get Insurance Now</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
